@@ -1,7 +1,7 @@
 {
-  "name": "time-color",
+  "name": "@ohmyverse/time-color",
   "version": "1.0.0",
-  "description": "",
+  "description": "Based on helpImStreaming idea: https://forum.decentraland.org/t/dao-2e1cb6f-should-decentraland-have-its-own-universal-time-but-its-based-on-colours/16648/20",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "rainbowvis.js": "^1.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Golfcraft/time-color.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Golfcraft/time-color/issues"
+  },
+  "homepage": "https://github.com/Golfcraft/time-color#readme"
 }
