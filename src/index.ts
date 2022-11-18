@@ -1,7 +1,13 @@
 import Rainbow from 'rainbowvis.js';
 
 const rainbow = new Rainbow();
-
+rainbow.setSpectrum(
+    "#ff0000",
+    "#ffff00",
+    "#00ff00",
+    "#0000ff",
+    "#d800ff"
+);
 export function getTimeColorHex(time:Date|number|string){
     var date = time instanceof Date ? time : new Date(time);
     var clockTime = getAbsoluteUTCClockTime(date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
