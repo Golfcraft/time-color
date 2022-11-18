@@ -1,6 +1,6 @@
 {
   "name": "@ohmyverse/time-color",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Based on helpImStreaming idea: https://forum.decentraland.org/t/dao-2e1cb6f-should-decentraland-have-its-own-universal-time-but-its-based-on-colours/16648/20",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",

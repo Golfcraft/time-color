@@ -6,7 +6,8 @@ rainbow.setSpectrum(
     "#ffff00",
     "#00ff00",
     "#0000ff",
-    "#d800ff"
+    "#ff00fb",
+    "#ff0000",
 );
 export function getTimeColorHex(time:Date|number|string){
     var date = time instanceof Date ? time : new Date(time);
