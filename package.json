@@ -1,6 +1,6 @@
 {
   "name": "@ohmyverse/time-color",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Based on helpImStreaming idea: https://forum.decentraland.org/t/dao-2e1cb6f-should-decentraland-have-its-own-universal-time-but-its-based-on-colours/16648/20",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
@@ -13,9 +13,6 @@
   "typings": "./dist/index.d.ts",
   "author": "OhMyVerse.io",
   "license": "Apache-2.0",
-  "dependencies": {
-    "rainbowvis.js": "^1.1.1"
-  },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.13.2",
     "decentraland-ecs": "latest",
