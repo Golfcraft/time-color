@@ -1,13 +1,44 @@
-export function getTimeColorHex(time:Date|number|string){
+const TIME_COLOR_NAMES = [
+    "Red",
+    "Vermilion",
+    "Flush Orange",
+    "Amber",
+    "Yellow",
+    "Lime",
+    "Chartreuse",
+    "Harlequin",
+    "Green",
+    "Malachite",
+    "Spring Green",
+    "Bright Turquoise",
+    "Cyan",
+    "Cerulean",
+    "Azure Radiance",
+    "Blue Ribbon",
+    "Blue",
+    "Electric Blue",
+    "Electric Violet",
+    "Violet",
+    "Magenta",
+    "Purple",
+    "Rose",
+    "Torch Red"
+]
+export function getTimeColorHex(time){
     var date = time instanceof Date ? time : new Date(time);
     var clockTime = getAbsoluteUTCClockTime(date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
     const MAX = getAbsoluteUTCClockTime(23,59,59,999);
 
     return hslToHex(360*clockTime/MAX,100,50);
+}
 
-    function getAbsoluteUTCClockTime(h:number,m:number,s:number,ms:number){
-        return ms + (s*1000) + (m*1000*60) + (h*1000*60*60);
-    }
+export function getColorNameFromDate(time){
+    var date = time instanceof Date ? time : new Date(time);
+    return TIME_COLOR_NAMES[date.getUTCHours()];
+}
+
+function getAbsoluteUTCClockTime(h,m,s,ms){
+    return ms + (s*1000) + (m*1000*60) + (h*1000*60*60);
 }
 
 function hslToHex(h, s, l) {
